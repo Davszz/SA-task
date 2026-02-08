@@ -75,6 +75,7 @@
       "min_order": 3000,
       "delivery_assembly": 59,
       "available": true,
+      "weight_limit": 30,
     },
 
     {
@@ -88,23 +89,7 @@
       "min_order": 1000,
       "delivery_fee": 200,
       "available": true,
-      "delivery_pricing": {
-        "type": "weight_based",
-        "rules": [
-          {
-            "min_weight_kg": 0,
-            "max_weight_kg": 30,
-            "delivery_fee": 0,
-            "description": "До 30 кг - бесплатно"
-          },
-          {
-            "min_weight_kg": 30.01,
-            "max_weight_kg": 500,
-            "price_per_kg": 5,
-            "description": "30-500 кг: 5 руб/кг"
-          }
-        ],
-      },
+      "weight_limit": 30,
     },
 
 
@@ -119,6 +104,7 @@
       "min_order": 3500,
       "delivery_fee": 0,
       "available": true,
+      "weight_limit": 20,
     },
 
     {
