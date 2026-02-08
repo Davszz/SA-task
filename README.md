@@ -52,7 +52,68 @@
   
   ## Задание 2: Проектирование API
   **1. Пример REST API запроса**
-  
+  ```
+      GET https://api.shop.com/v1/partners?city=moscow
+      Accept: application/json
+      Authorization: Bearer <user_token>
+  ```
+ **2. Пример REST API ответа**
+ ```
+{
+  "title": "Выберите магазин",
+  "city": "Москва",
+  "partners": [
+    {
+      "id": "metro_1",
+      "name": "METRO",
+      "description": "Ближайшая доставка сегодня 21:00-23:00",
+      "logo_url": "https://cdn-mcc-opv-s3.metro-cc.ru/mcc-opv-public-production/mcc/docs/metro_RGB.jpg",
+      "delivery_type": "scheduled",
+      "delivery_time_min": "21:00",
+      "delivery_time_max": "23:00",
+      "min_order": 2000,
+      "delivery_fee": 0,
+    },
+
+    {
+      "id": "auchan_1",
+      "name": "АШАН",
+      "description": "Ближайшая доставка сегодня 18:00-20:00",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/ru/thumb/7/78/Auchan-logo.svg/1280px-Auchan-logo.svg.png?20190826084109",
+      "delivery_type": "scheduled",
+      "delivery_time_min": "18:00",
+      "delivery_time_max": "20:00",
+      "min_order": 1000,
+      "delivery_fee": 200,
+    },
+
+    {
+      "id": "vkusvill_1",
+      "name": "ВкусВилл",
+      "description": "Быстрая доставка от 20 до 60 минут",
+      "logo_url": "https://disk.yandex.ru/d/xvzn2EPu4Yl9Xw/%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB%20%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9/%D0%9B%D0%BE%D0%B3%D0%BE%20%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB%20%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9.svg",
+      "delivery_type": "scheduled",
+      "delivery_minutes_min": 20,
+      "delivery_minutes_max": 60,
+      "min_order": 1500,
+      "delivery_fee": 0,
+    },
+
+    {
+      "id": "victoria_group_1",
+      "name": "ВИКТОРИЯ",
+      "description": "Ближайшая доставка сегодня 17:00-19:00",
+      "logo_url": "https://victoria-group.ru/local/templates/victoria_copy/img/logo.jpg",
+      "delivery_type": "scheduled",
+      "delivery_time_min": "17:00",
+      "delivery_time_max": "19:00",
+      "min_order": 3000,
+      "delivery_fee": 0,
+    }
+  ]
+}
+
+ ```
   
 
 
